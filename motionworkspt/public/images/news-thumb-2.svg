@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e4e0"/>
+      <stop offset="100%" style="stop-color:#d4cfc8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#E8751A;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#E8751A;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="220" fill="url(#bg-grad)"/>
+
+  <!-- Subtle texture lines -->
+  <g stroke="#d0cbc4" stroke-width="0.5" opacity="0.5">
+    <line x1="0" y1="44" x2="400" y2="44"/>
+    <line x1="0" y1="88" x2="400" y2="88"/>
+    <line x1="0" y1="132" x2="400" y2="132"/>
+    <line x1="0" y1="176" x2="400" y2="176"/>
+  </g>
+
+  <!-- Orange glow around contact area -->
+  <ellipse cx="200" cy="130" rx="80" ry="55" fill="url(#glow)"/>
+
+  <!-- Two simplified therapy hands -->
+  <!-- Bottom/supporting hand -->
+  <g>
+    <!-- Palm -->
+    <ellipse cx="200" cy="158" rx="55" ry="22" fill="#C8906A"/>
+    <!-- Fingers -->
+    <rect x="148" y="138" width="12" height="26" rx="6" fill="#C8906A" transform="rotate(-5, 154, 138)"/>
+    <rect x="163" y="134" width="12" height="28" rx="6" fill="#C8906A" transform="rotate(-2, 169, 134)"/>
+    <rect x="179" y="133" width="12" height="29" rx="6" fill="#C8906A"/>
+    <rect x="195" y="134" width="12" height="28" rx="6" fill="#C8906A" transform="rotate(3, 201, 134)"/>
+    <!-- Thumb -->
+    <ellipse cx="142" cy="152" rx="11" ry="7" fill="#C8906A" transform="rotate(-20, 142, 152)"/>
+  </g>
+
+  <!-- Top/active hand -->
+  <g>
+    <!-- Palm -->
+    <ellipse cx="200" cy="108" rx="50" ry="20" fill="#C8906A"/>
+    <!-- Fingers curled -->
+    <rect x="152" y="90" width="11" height="24" rx="6" fill="#C8906A" transform="rotate(8, 157, 90)"/>
+    <rect x="167" y="86" width="11" height="26" rx="6" fill="#C8906A" transform="rotate(4, 172, 86)"/>
+    <rect x="182" y="85" width="11" height="26" rx="6" fill="#C8906A"/>
+    <rect x="197" y="86" width="11" height="25" rx="6" fill="#C8906A" transform="rotate(-4, 202, 86)"/>
+    <!-- Thumb -->
+    <ellipse cx="248" cy="102" rx="11" ry="7" fill="#C8906A" transform="rotate(15, 248, 102)"/>
+  </g>
+
+  <!-- Orange contact point highlight -->
+  <ellipse cx="200" cy="130" rx="30" ry="18" fill="none" stroke="#E8751A" stroke-width="2" opacity="0.7"/>
+  <ellipse cx="200" cy="130" rx="42" ry="26" fill="none" stroke="#E8751A" stroke-width="1" opacity="0.35"/>
+
+  <!-- Medical cross - orange, centered top -->
+  <g fill="#E8751A">
+    <rect x="193" y="18" width="14" height="42" rx="4"/>
+    <rect x="179" y="32" width="42" height="14" rx="4"/>
+  </g>
+  <!-- Cross glow -->
+  <g fill="#E8751A" opacity="0.2">
+    <rect x="190" y="15" width="20" height="48" rx="5"/>
+    <rect x="176" y="29" width="48" height="20" rx="5"/>
+  </g>
+
+  <!-- Shadow beneath hands -->
+  <ellipse cx="200" cy="200" rx="65" ry="10" fill="#b0a898" opacity="0.3"/>
+
+  <!-- "Manual Therapy" label -->
+  <text x="200" y="210" font-family="Arial, sans-serif" font-size="10" fill="#888078" text-anchor="middle" opacity="0.7" letter-spacing="1">MANUAL THERAPY</text>
+</svg>

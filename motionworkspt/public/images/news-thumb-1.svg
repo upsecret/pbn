@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ddeeff"/>
+      <stop offset="100%" style="stop-color:#b8d8f8"/>
+    </linearGradient>
+    <radialGradient id="sun-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFE066;stop-opacity:0.9"/>
+      <stop offset="60%" style="stop-color:#E8751A;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#E8751A;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="220" fill="url(#bg-grad)"/>
+
+  <!-- Sun / light rays behind figure -->
+  <circle cx="200" cy="115" r="90" fill="url(#sun-grad)" opacity="0.7"/>
+  <!-- Sun rays -->
+  <g stroke="#E8751A" stroke-width="2" opacity="0.4">
+    <line x1="200" y1="25" x2="200" y2="5"/>
+    <line x1="255" y1="40" x2="270" y2="25"/>
+    <line x1="290" y1="85" x2="308" y2="78"/>
+    <line x1="290" y1="145" x2="310" y2="155"/>
+    <line x1="255" y1="185" x2="268" y2="200"/>
+    <line x1="145" y1="185" x2="132" y2="200"/>
+    <line x1="110" y1="145" x2="92" y2="155"/>
+    <line x1="110" y1="85" x2="92" y2="78"/>
+    <line x1="145" y1="40" x2="130" y2="25"/>
+  </g>
+
+  <!-- Floor line -->
+  <line x1="60" y1="192" x2="340" y2="192" stroke="#90b8d8" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Stretching person silhouette (seated forward fold / yoga pose) -->
+  <!-- Seated figure with arms reaching forward -->
+  <!-- Torso leaning forward -->
+  <path d="M190 145 Q195 110 210 95 L235 95 Q248 110 245 148 Z" fill="#4A4A4A"/>
+  <!-- Head down/forward -->
+  <circle cx="222" cy="85" r="18" fill="#4A4A4A"/>
+  <!-- Arms reaching forward/down -->
+  <path d="M198 120 Q170 130 145 135" stroke="#4A4A4A" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M240 120 Q260 128 275 132" stroke="#4A4A4A" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <!-- Hands -->
+  <circle cx="143" cy="136" r="7" fill="#4A4A4A"/>
+  <circle cx="277" cy="133" r="7" fill="#4A4A4A"/>
+  <!-- Legs stretched out (seated) -->
+  <path d="M192 148 L155 185" stroke="#4A4A4A" stroke-width="13" fill="none" stroke-linecap="round"/>
+  <path d="M243 148 L278 185" stroke="#4A4A4A" stroke-width="13" fill="none" stroke-linecap="round"/>
+  <!-- Feet -->
+  <ellipse cx="152" cy="187" rx="14" ry="6" fill="#3a3a3a"/>
+  <ellipse cx="281" cy="187" rx="14" ry="6" fill="#3a3a3a"/>
+
+  <!-- "PT Tips" badge -->
+  <rect x="14" y="14" width="72" height="28" rx="14" fill="#E8751A"/>
+  <text x="50" y="27" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">PT Tips</text>
+  <text x="50" y="37" font-family="Arial, sans-serif" font-size="7" fill="white" text-anchor="middle" opacity="0.85">HEALTH</text>
+
+  <!-- Subtle sparkle dots -->
+  <g fill="#E8751A" opacity="0.5">
+    <circle cx="320" cy="30" r="3"/>
+    <circle cx="335" cy="18" r="2"/>
+    <circle cx="310" cy="20" r="1.5"/>
+    <circle cx="75" cy="180" r="2.5"/>
+    <circle cx="62" cy="168" r="1.5"/>
+  </g>
+</svg>

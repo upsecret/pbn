@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -X POST https://cms.womenswellnesscircle.com/graphql -H \"Content-Type: application/json\" -d '{\"\"query\"\":\"\"{ post\\(id: \\\\\"\"uehommachi-dental-clinic\\\\\"\", idType: SLUG\\) { id title slug content excerpt date featuredImage { node { sourceUrl altText } } } }\"\"}')",
+      "Bash(vercel --prod --yes)"
+    ]
+  }
+}

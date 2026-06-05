@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4e8"/>
+      <stop offset="100%" style="stop-color:#d0ebd0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="260" fill="url(#bg-grad)"/>
+
+  <!-- Floor line -->
+  <line x1="40" y1="225" x2="360" y2="225" stroke="#a0c8a0" stroke-width="2.5"/>
+  <rect x="40" y="225" width="320" height="4" rx="2" fill="#a0c8a0" opacity="0.5"/>
+
+  <!-- Motion lines behind the figure -->
+  <g stroke="#a8d4a8" stroke-width="2" fill="none" opacity="0.7">
+    <path d="M120 160 Q105 140 110 110"/>
+    <path d="M115 170 Q98 148 104 115"/>
+    <path d="M110 180 Q92 155 100 120"/>
+    <path d="M125 155 Q112 132 118 100"/>
+    <path d="M130 165 Q118 145 124 118"/>
+  </g>
+
+  <!-- Dotted arc showing movement trajectory -->
+  <path d="M150 210 Q200 110 280 180" stroke="#E8751A" stroke-width="2" fill="none" stroke-dasharray="5,4" opacity="0.7"/>
+  <!-- Arrow at end of arc -->
+  <polygon points="280,180 270,172 274,185" fill="#E8751A" opacity="0.7"/>
+
+  <!-- Figure in lunge/squat pose (silhouette) -->
+  <!-- Head -->
+  <circle cx="205" cy="65" r="18" fill="#4A4A4A"/>
+  <!-- Neck -->
+  <rect x="199" y="81" width="12" height="12" fill="#4A4A4A"/>
+  <!-- Torso (leaning slightly) -->
+  <path d="M190 92 L225 92 L230 158 L185 158 Z" fill="#4A4A4A"/>
+  <!-- Green accent clothing overlay on torso -->
+  <path d="M192 95 L222 95 L226 150 L188 150 Z" fill="#5B8533" opacity="0.6"/>
+
+  <!-- Left arm extended forward (with dumbbell) -->
+  <path d="M190 105 Q162 90 138 88" stroke="#4A4A4A" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Right arm extended back/out -->
+  <path d="M225 105 Q252 88 272 82" stroke="#4A4A4A" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+  <!-- Dumbbell in left hand -->
+  <!-- Handle -->
+  <rect x="108" y="85" width="32" height="7" rx="3" fill="#E8751A"/>
+  <!-- Left weight -->
+  <rect x="100" y="80" width="10" height="17" rx="3" fill="#E8751A"/>
+  <!-- Right weight -->
+  <rect x="139" y="80" width="10" height="17" rx="3" fill="#E8751A"/>
+
+  <!-- Dumbbell in right hand -->
+  <!-- Handle -->
+  <rect x="270" y="78" width="32" height="7" rx="3" fill="#E8751A"/>
+  <!-- Left weight -->
+  <rect x="262" y="73" width="10" height="17" rx="3" fill="#E8751A"/>
+  <!-- Right weight -->
+  <rect x="301" y="73" width="10" height="17" rx="3" fill="#E8751A"/>
+
+  <!-- Left leg (front leg in lunge - bent) -->
+  <path d="M192 157 L178 200 L170 224" stroke="#4A4A4A" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- Left foot -->
+  <ellipse cx="168" cy="224" rx="18" ry="7" fill="#3a3a3a"/>
+
+  <!-- Right leg (back leg in lunge - extended) -->
+  <path d="M218 157 L238 195 L255 222" stroke="#4A4A4A" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- Right foot -->
+  <ellipse cx="258" cy="223" rx="18" ry="7" fill="#3a3a3a"/>
+
+  <!-- Green accent on legs -->
+  <path d="M194 160 L182 198 L175 220" stroke="#5B8533" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M220 160 L238 196 L252 220" stroke="#5B8533" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Small energy dots -->
+  <g fill="#E8751A" opacity="0.5">
+    <circle cx="320" cy="50" r="4"/>
+    <circle cx="335" cy="65" r="2.5"/>
+    <circle cx="310" cy="68" r="2"/>
+    <circle cx="60" cy="80" r="3"/>
+    <circle cx="45" cy="95" r="2"/>
+  </g>
+</svg>

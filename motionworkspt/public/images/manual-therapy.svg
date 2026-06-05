@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8eef2"/>
+      <stop offset="100%" style="stop-color:#d4dde5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#E8751A;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#E8751A;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#b0c0cc" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="260" fill="url(#bg-grad)"/>
+
+  <!-- Healing sparkle dots -->
+  <g fill="#E8751A">
+    <circle cx="60" cy="50" r="3" opacity="0.6"/>
+    <circle cx="75" cy="35" r="2" opacity="0.4"/>
+    <circle cx="50" cy="38" r="1.5" opacity="0.5"/>
+    <circle cx="340" cy="60" r="3" opacity="0.6"/>
+    <circle cx="355" cy="45" r="2" opacity="0.4"/>
+    <circle cx="345" cy="75" r="1.5" opacity="0.5"/>
+    <circle cx="80" cy="200" r="3" opacity="0.5"/>
+    <circle cx="95" cy="215" r="2" opacity="0.35"/>
+    <circle cx="320" cy="200" r="3" opacity="0.5"/>
+    <circle cx="335" cy="188" r="2" opacity="0.4"/>
+    <circle cx="200" cy="30" r="2.5" opacity="0.45"/>
+    <circle cx="215" cy="20" r="1.5" opacity="0.35"/>
+  </g>
+
+  <!-- Orange glow at contact point -->
+  <ellipse cx="200" cy="148" rx="55" ry="40" fill="url(#glow)"/>
+
+  <!-- Bottom hand (supporting) - palm up / cupping -->
+  <g filter="url(#shadow)">
+    <!-- Palm base of bottom hand -->
+    <ellipse cx="200" cy="180" rx="62" ry="28" fill="#D4956A"/>
+    <!-- Thumb of bottom hand -->
+    <ellipse cx="138" cy="168" rx="14" ry="9" fill="#D4956A" transform="rotate(-25, 138, 168)"/>
+    <!-- Fingers of bottom hand (4 fingers) -->
+    <rect x="148" y="155" width="14" height="30" rx="7" fill="#D4956A" transform="rotate(-8, 155, 155)"/>
+    <rect x="166" y="151" width="14" height="34" rx="7" fill="#D4956A" transform="rotate(-3, 173, 151)"/>
+    <rect x="185" y="150" width="14" height="35" rx="7" fill="#D4956A" transform="rotate(2, 192, 150)"/>
+    <rect x="204" y="151" width="14" height="33" rx="7" fill="#D4956A" transform="rotate(6, 211, 151)"/>
+    <!-- Knuckle lines on bottom hand -->
+    <line x1="152" y1="160" x2="160" y2="158" stroke="#c07a4f" stroke-width="1" opacity="0.5"/>
+    <line x1="170" y1="157" x2="178" y2="155" stroke="#c07a4f" stroke-width="1" opacity="0.5"/>
+    <line x1="189" y1="156" x2="197" y2="155" stroke="#c07a4f" stroke-width="1" opacity="0.5"/>
+    <line x1="207" y1="157" x2="216" y2="157" stroke="#c07a4f" stroke-width="1" opacity="0.5"/>
+    <!-- Wrist crease -->
+    <path d="M145 188 Q200 196 255 186" stroke="#c07a4f" stroke-width="1.5" fill="none" opacity="0.4"/>
+  </g>
+
+  <!-- Top hand (performing treatment) -->
+  <g filter="url(#shadow)">
+    <!-- Palm of top hand -->
+    <ellipse cx="200" cy="125" rx="58" ry="26" fill="#D4956A"/>
+    <!-- Thumb of top hand -->
+    <ellipse cx="255" cy="113" rx="13" ry="8" fill="#D4956A" transform="rotate(20, 255, 113)"/>
+    <!-- Fingers of top hand curled down -->
+    <rect x="152" y="103" width="13" height="28" rx="7" fill="#D4956A" transform="rotate(10, 158, 103)"/>
+    <rect x="170" y="99" width="13" height="30" rx="7" fill="#D4956A" transform="rotate(5, 176, 99)"/>
+    <rect x="188" y="98" width="13" height="30" rx="7" fill="#D4956A" transform="rotate(0, 194, 98)"/>
+    <rect x="206" y="99" width="13" height="28" rx="7" fill="#D4956A" transform="rotate(-5, 212, 99)"/>
+    <!-- Knuckle lines on top hand -->
+    <line x1="157" y1="109" x2="164" y2="107" stroke="#c07a4f" stroke-width="1" opacity="0.5"/>
+    <line x1="174" y1="105" x2="181" y2="104" stroke="#c07a4f" stroke-width="1" opacity="0.5"/>
+    <line x1="193" y1="104" x2="200" y2="104" stroke="#c07a4f" stroke-width="1" opacity="0.5"/>
+    <line x1="211" y1="105" x2="218" y2="106" stroke="#c07a4f" stroke-width="1" opacity="0.5"/>
+    <!-- Wrist crease -->
+    <path d="M148 130 Q200 138 252 128" stroke="#c07a4f" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <!-- Joint anatomy lines on top hand -->
+    <path d="M156 117 Q165 120 165 127" stroke="#c07a4f" stroke-width="1" fill="none" opacity="0.35"/>
+    <path d="M174 113 Q183 116 183 124" stroke="#c07a4f" stroke-width="1" fill="none" opacity="0.35"/>
+    <path d="M193 112 Q202 115 202 123" stroke="#c07a4f" stroke-width="1" fill="none" opacity="0.35"/>
+  </g>
+
+  <!-- Orange highlight ring at contact point -->
+  <ellipse cx="200" cy="148" rx="35" ry="20" fill="none" stroke="#E8751A" stroke-width="2" opacity="0.6"/>
+  <ellipse cx="200" cy="148" rx="45" ry="28" fill="none" stroke="#E8751A" stroke-width="1" opacity="0.3"/>
+
+  <!-- Shadow beneath hands -->
+  <ellipse cx="200" cy="225" rx="75" ry="12" fill="#b0b8c0" opacity="0.25"/>
+</svg>

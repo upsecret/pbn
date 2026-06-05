@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Dark rounded background -->
+  <rect width="32" height="32" rx="5" fill="#3A3A3A"/>
+
+  <!-- M (green) : left vertical, up-center-up, right vertical -->
+  <path d="M3,23 L3,8 L9,18 L15,8 L15,23" stroke="#5B8533" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- W (orange) -->
+  <path d="M17,8 L19.5,22 L23,13 L26.5,22 L29,8" stroke="#E8751A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

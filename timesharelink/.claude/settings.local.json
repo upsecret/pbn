@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build)",
+      "Bash(ls C:/Users/Administrator/antigravity/timesharelink/*.sh C:/Users/Administrator/antigravity/timesharelink/*.yml C:/Users/Administrator/antigravity/timesharelink/pm2*)",
+      "Bash(vercel --prod)",
+      "Bash(vercel --prod --yes)"
+    ]
+  }
+}

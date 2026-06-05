@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4A4A4A"/>
+      <stop offset="100%" style="stop-color:#333333"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg-grad)"/>
+
+  <!-- Flowing orange waves at varying opacities -->
+  <!-- Wave 1 - low opacity -->
+  <path d="M-50 200 Q150 140 300 180 Q450 220 600 160 Q750 100 900 150 Q1050 200 1250 140"
+    stroke="#E8751A" stroke-width="60" fill="none" opacity="0.15" stroke-linecap="round"/>
+
+  <!-- Wave 2 - medium opacity -->
+  <path d="M-50 240 Q200 170 400 210 Q600 250 800 180 Q1000 110 1250 180"
+    stroke="#E8751A" stroke-width="40" fill="none" opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Wave 3 - higher opacity, thinner -->
+  <path d="M-50 120 Q100 80 250 110 Q400 140 550 90 Q700 40 850 80 Q1000 120 1100 70 Q1150 50 1250 60"
+    stroke="#E8751A" stroke-width="25" fill="none" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Additional subtle wave -->
+  <path d="M-50 60 Q250 30 500 70 Q750 110 1000 50 Q1100 30 1250 45"
+    stroke="#E8751A" stroke-width="15" fill="none" opacity="0.2" stroke-linecap="round"/>
+
+  <!-- Wave at bottom -->
+  <path d="M-50 280 Q300 250 600 270 Q900 290 1250 260"
+    stroke="#E8751A" stroke-width="20" fill="none" opacity="0.25" stroke-linecap="round"/>
+
+  <!-- Dot pattern overlay (subtle white dots) -->
+  <g fill="white" opacity="0.05">
+    <!-- Row 1 -->
+    <circle cx="50" cy="30" r="2"/>
+    <circle cx="100" cy="30" r="2"/>
+    <circle cx="150" cy="30" r="2"/>
+    <circle cx="200" cy="30" r="2"/>
+    <circle cx="250" cy="30" r="2"/>
+    <circle cx="300" cy="30" r="2"/>
+    <circle cx="350" cy="30" r="2"/>
+    <circle cx="400" cy="30" r="2"/>
+    <circle cx="450" cy="30" r="2"/>
+    <circle cx="500" cy="30" r="2"/>
+    <circle cx="550" cy="30" r="2"/>
+    <circle cx="600" cy="30" r="2"/>
+    <circle cx="650" cy="30" r="2"/>
+    <circle cx="700" cy="30" r="2"/>
+    <circle cx="750" cy="30" r="2"/>
+    <circle cx="800" cy="30" r="2"/>
+    <circle cx="850" cy="30" r="2"/>
+    <circle cx="900" cy="30" r="2"/>
+    <circle cx="950" cy="30" r="2"/>
+    <circle cx="1000" cy="30" r="2"/>
+    <circle cx="1050" cy="30" r="2"/>
+    <circle cx="1100" cy="30" r="2"/>
+    <circle cx="1150" cy="30" r="2"/>
+    <!-- Row 2 -->
+    <circle cx="75" cy="60" r="2"/>
+    <circle cx="125" cy="60" r="2"/>
+    <circle cx="175" cy="60" r="2"/>
+    <circle cx="225" cy="60" r="2"/>
+    <circle cx="275" cy="60" r="2"/>
+    <circle cx="325" cy="60" r="2"/>
+    <circle cx="375" cy="60" r="2"/>
+    <circle cx="425" cy="60" r="2"/>
+    <circle cx="475" cy="60" r="2"/>
+    <circle cx="525" cy="60" r="2"/>
+    <circle cx="575" cy="60" r="2"/>
+    <circle cx="625" cy="60" r="2"/>
+    <circle cx="675" cy="60" r="2"/>
+    <circle cx="725" cy="60" r="2"/>
+    <circle cx="775" cy="60" r="2"/>
+    <circle cx="825" cy="60" r="2"/>
+    <circle cx="875" cy="60" r="2"/>
+    <circle cx="925" cy="60" r="2"/>
+    <circle cx="975" cy="60" r="2"/>
+    <circle cx="1025" cy="60" r="2"/>
+    <circle cx="1075" cy="60" r="2"/>
+    <circle cx="1125" cy="60" r="2"/>
+    <!-- Row 3 -->
+    <circle cx="50" cy="90" r="2"/>
+    <circle cx="100" cy="90" r="2"/>
+    <circle cx="150" cy="90" r="2"/>
+    <circle cx="200" cy="90" r="2"/>
+    <circle cx="250" cy="90" r="2"/>
+    <circle cx="300" cy="90" r="2"/>
+    <circle cx="350" cy="90" r="2"/>
+    <circle cx="400" cy="90" r="2"/>
+    <circle cx="450" cy="90" r="2"/>
+    <circle cx="500" cy="90" r="2"/>
+    <circle cx="550" cy="90" r="2"/>
+    <circle cx="600" cy="90" r="2"/>
+    <circle cx="650" cy="90" r="2"/>
+    <circle cx="700" cy="90" r="2"/>
+    <circle cx="750" cy="90" r="2"/>
+    <circle cx="800" cy="90" r="2"/>
+    <circle cx="850" cy="90" r="2"/>
+    <circle cx="900" cy="90" r="2"/>
+    <circle cx="950" cy="90" r="2"/>
+    <circle cx="1000" cy="90" r="2"/>
+    <circle cx="1050" cy="90" r="2"/>
+    <circle cx="1100" cy="90" r="2"/>
+    <circle cx="1150" cy="90" r="2"/>
+    <!-- Row 4 -->
+    <circle cx="75" cy="120" r="2"/>
+    <circle cx="125" cy="120" r="2"/>
+    <circle cx="175" cy="120" r="2"/>
+    <circle cx="225" cy="120" r="2"/>
+    <circle cx="275" cy="120" r="2"/>
+    <circle cx="325" cy="120" r="2"/>
+    <circle cx="375" cy="120" r="2"/>
+    <circle cx="425" cy="120" r="2"/>
+    <circle cx="475" cy="120" r="2"/>
+    <circle cx="525" cy="120" r="2"/>
+    <circle cx="575" cy="120" r="2"/>
+    <circle cx="625" cy="120" r="2"/>
+    <circle cx="675" cy="120" r="2"/>
+    <circle cx="725" cy="120" r="2"/>
+    <circle cx="775" cy="120" r="2"/>
+    <circle cx="825" cy="120" r="2"/>
+    <circle cx="875" cy="120" r="2"/>
+    <circle cx="925" cy="120" r="2"/>
+    <circle cx="975" cy="120" r="2"/>
+    <circle cx="1025" cy="120" r="2"/>
+    <circle cx="1075" cy="120" r="2"/>
+    <circle cx="1125" cy="120" r="2"/>
+    <!-- Row 5 -->
+    <circle cx="50" cy="150" r="2"/>
+    <circle cx="100" cy="150" r="2"/>
+    <circle cx="150" cy="150" r="2"/>
+    <circle cx="200" cy="150" r="2"/>
+    <circle cx="250" cy="150" r="2"/>
+    <circle cx="300" cy="150" r="2"/>
+    <circle cx="350" cy="150" r="2"/>
+    <circle cx="400" cy="150" r="2"/>
+    <circle cx="450" cy="150" r="2"/>
+    <circle cx="500" cy="150" r="2"/>
+    <circle cx="550" cy="150" r="2"/>
+    <circle cx="600" cy="150" r="2"/>
+    <circle cx="650" cy="150" r="2"/>
+    <circle cx="700" cy="150" r="2"/>
+    <circle cx="750" cy="150" r="2"/>
+    <circle cx="800" cy="150" r="2"/>
+    <circle cx="850" cy="150" r="2"/>
+    <circle cx="900" cy="150" r="2"/>
+    <circle cx="950" cy="150" r="2"/>
+    <circle cx="1000" cy="150" r="2"/>
+    <circle cx="1050" cy="150" r="2"/>
+    <circle cx="1100" cy="150" r="2"/>
+    <circle cx="1150" cy="150" r="2"/>
+    <!-- Row 6 -->
+    <circle cx="75" cy="180" r="2"/>
+    <circle cx="125" cy="180" r="2"/>
+    <circle cx="175" cy="180" r="2"/>
+    <circle cx="225" cy="180" r="2"/>
+    <circle cx="275" cy="180" r="2"/>
+    <circle cx="325" cy="180" r="2"/>
+    <circle cx="375" cy="180" r="2"/>
+    <circle cx="425" cy="180" r="2"/>
+    <circle cx="475" cy="180" r="2"/>
+    <circle cx="525" cy="180" r="2"/>
+    <circle cx="575" cy="180" r="2"/>
+    <circle cx="625" cy="180" r="2"/>
+    <circle cx="675" cy="180" r="2"/>
+    <circle cx="725" cy="180" r="2"/>
+    <circle cx="775" cy="180" r="2"/>
+    <circle cx="825" cy="180" r="2"/>
+    <circle cx="875" cy="180" r="2"/>
+    <circle cx="925" cy="180" r="2"/>
+    <circle cx="975" cy="180" r="2"/>
+    <circle cx="1025" cy="180" r="2"/>
+    <circle cx="1075" cy="180" r="2"/>
+    <circle cx="1125" cy="180" r="2"/>
+    <!-- Row 7 -->
+    <circle cx="50" cy="210" r="2"/>
+    <circle cx="100" cy="210" r="2"/>
+    <circle cx="150" cy="210" r="2"/>
+    <circle cx="200" cy="210" r="2"/>
+    <circle cx="250" cy="210" r="2"/>
+    <circle cx="300" cy="210" r="2"/>
+    <circle cx="350" cy="210" r="2"/>
+    <circle cx="400" cy="210" r="2"/>
+    <circle cx="450" cy="210" r="2"/>
+    <circle cx="500" cy="210" r="2"/>
+    <circle cx="550" cy="210" r="2"/>
+    <circle cx="600" cy="210" r="2"/>
+    <circle cx="650" cy="210" r="2"/>
+    <circle cx="700" cy="210" r="2"/>
+    <circle cx="750" cy="210" r="2"/>
+    <circle cx="800" cy="210" r="2"/>
+    <circle cx="850" cy="210" r="2"/>
+    <circle cx="900" cy="210" r="2"/>
+    <circle cx="950" cy="210" r="2"/>
+    <circle cx="1000" cy="210" r="2"/>
+    <circle cx="1050" cy="210" r="2"/>
+    <circle cx="1100" cy="210" r="2"/>
+    <circle cx="1150" cy="210" r="2"/>
+    <!-- Row 8 -->
+    <circle cx="75" cy="240" r="2"/>
+    <circle cx="125" cy="240" r="2"/>
+    <circle cx="175" cy="240" r="2"/>
+    <circle cx="225" cy="240" r="2"/>
+    <circle cx="275" cy="240" r="2"/>
+    <circle cx="325" cy="240" r="2"/>
+    <circle cx="375" cy="240" r="2"/>
+    <circle cx="425" cy="240" r="2"/>
+    <circle cx="475" cy="240" r="2"/>
+    <circle cx="525" cy="240" r="2"/>
+    <circle cx="575" cy="240" r="2"/>
+    <circle cx="625" cy="240" r="2"/>
+    <circle cx="675" cy="240" r="2"/>
+    <circle cx="725" cy="240" r="2"/>
+    <circle cx="775" cy="240" r="2"/>
+    <circle cx="825" cy="240" r="2"/>
+    <circle cx="875" cy="240" r="2"/>
+    <circle cx="925" cy="240" r="2"/>
+    <circle cx="975" cy="240" r="2"/>
+    <circle cx="1025" cy="240" r="2"/>
+    <circle cx="1075" cy="240" r="2"/>
+    <circle cx="1125" cy="240" r="2"/>
+    <!-- Row 9 -->
+    <circle cx="50" cy="270" r="2"/>
+    <circle cx="100" cy="270" r="2"/>
+    <circle cx="150" cy="270" r="2"/>
+    <circle cx="200" cy="270" r="2"/>
+    <circle cx="250" cy="270" r="2"/>
+    <circle cx="300" cy="270" r="2"/>
+    <circle cx="350" cy="270" r="2"/>
+    <circle cx="400" cy="270" r="2"/>
+    <circle cx="450" cy="270" r="2"/>
+    <circle cx="500" cy="270" r="2"/>
+    <circle cx="550" cy="270" r="2"/>
+    <circle cx="600" cy="270" r="2"/>
+    <circle cx="650" cy="270" r="2"/>
+    <circle cx="700" cy="270" r="2"/>
+    <circle cx="750" cy="270" r="2"/>
+    <circle cx="800" cy="270" r="2"/>
+    <circle cx="850" cy="270" r="2"/>
+    <circle cx="900" cy="270" r="2"/>
+    <circle cx="950" cy="270" r="2"/>
+    <circle cx="1000" cy="270" r="2"/>
+    <circle cx="1050" cy="270" r="2"/>
+    <circle cx="1100" cy="270" r="2"/>
+    <circle cx="1150" cy="270" r="2"/>
+  </g>
+
+  <!-- Medical cross/plus icons scattered in orange at 0.2 opacity -->
+  <g fill="#E8751A" opacity="0.2">
+    <!-- Cross 1 -->
+    <rect x="95" y="45" width="5" height="15" rx="1"/>
+    <rect x="89" y="51" width="17" height="5" rx="1"/>
+    <!-- Cross 2 -->
+    <rect x="248" y="190" width="5" height="15" rx="1"/>
+    <rect x="242" y="196" width="17" height="5" rx="1"/>
+    <!-- Cross 3 -->
+    <rect x="448" y="80" width="5" height="15" rx="1"/>
+    <rect x="442" y="86" width="17" height="5" rx="1"/>
+    <!-- Cross 4 -->
+    <rect x="648" y="220" width="5" height="15" rx="1"/>
+    <rect x="642" y="226" width="17" height="5" rx="1"/>
+    <!-- Cross 5 -->
+    <rect x="798" y="50" width="5" height="15" rx="1"/>
+    <rect x="792" y="56" width="17" height="5" rx="1"/>
+    <!-- Cross 6 -->
+    <rect x="998" y="180" width="5" height="15" rx="1"/>
+    <rect x="992" y="186" width="17" height="5" rx="1"/>
+    <!-- Cross 7 -->
+    <rect x="1098" y="100" width="5" height="15" rx="1"/>
+    <rect x="1092" y="106" width="17" height="5" rx="1"/>
+    <!-- Cross 8 -->
+    <rect x="348" y="135" width="4" height="12" rx="1"/>
+    <rect x="343" y="140" width="14" height="4" rx="1"/>
+    <!-- Cross 9 -->
+    <rect x="548" y="240" width="4" height="12" rx="1"/>
+    <rect x="543" y="245" width="14" height="4" rx="1"/>
+  </g>
+</svg>

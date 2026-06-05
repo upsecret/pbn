@@ -1,0 +1,58 @@
+{
+  "framework": "nextjs",
+  "ignoreCommand": "git diff HEAD^ HEAD --quiet ./",
+  "buildCommand": "npm run build",
+  "rewrites": [
+    { "source": "/검증로그", "destination": "/updates" },
+    { "source": "/%EA%B2%80%EC%A6%9D%EB%A1%9C%EA%B7%B8", "destination": "/updates" },
+    { "source": "/주소아트", "destination": "/brands/jusoart" },
+    { "source": "/%EC%A3%BC%EC%86%8C%EC%95%84%ED%8A%B8", "destination": "/brands/jusoart" },
+    { "source": "/주소팝", "destination": "/brands/jusopop" },
+    { "source": "/%EC%A3%BC%EC%86%8C%ED%8C%9D", "destination": "/brands/jusopop" },
+    { "source": "/주소박스", "destination": "/brands/jusobox" },
+    { "source": "/%EC%A3%BC%EC%86%8C%EB%B0%95%EC%8A%A4", "destination": "/brands/jusobox" },
+    { "source": "/주소어때", "destination": "/brands/jusoottae" },
+    { "source": "/%EC%A3%BC%EC%86%8C%EC%96%B4%EB%95%8C", "destination": "/brands/jusoottae" },
+    { "source": "/주소몬", "destination": "/brands/jusomon" },
+    { "source": "/%EC%A3%BC%EC%86%8C%EB%AA%AC", "destination": "/brands/jusomon" },
+    { "source": "/주소파크", "destination": "/brands/jusopark" },
+    { "source": "/%EC%A3%BC%EC%86%8C%ED%8C%8C%ED%81%AC", "destination": "/brands/jusopark" },
+    { "source": "/주소북", "destination": "/brands/jusobook" },
+    { "source": "/%EC%A3%BC%EC%86%8C%EB%B6%81", "destination": "/brands/jusobook" },
+    { "source": "/주소허브", "destination": "/brands/jusohub" },
+    { "source": "/%EC%A3%BC%EC%86%8C%ED%97%88%EB%B8%8C", "destination": "/brands/jusohub" },
+    { "source": "/빠른주소", "destination": "/brands/ppareunjuso" },
+    { "source": "/%EB%B9%A0%EB%A5%B8%EC%A3%BC%EC%86%8C", "destination": "/brands/ppareunjuso" },
+    { "source": "/주소모음", "destination": "/brands/jusomoeum" },
+    { "source": "/%EC%A3%BC%EC%86%8C%EB%AA%A8%EC%9D%8C", "destination": "/brands/jusomoeum" },
+    { "source": "/주소콘", "destination": "/brands/jusokon" },
+    { "source": "/%EC%A3%BC%EC%86%8C%EC%BD%98", "destination": "/brands/jusokon" },
+    { "source": "/주소가이드", "destination": "/brands/jusoguide" },
+    { "source": "/%EC%A3%BC%EC%86%8C%EA%B0%80%EC%9D%B4%EB%93%9C", "destination": "/brands/jusoguide" },
+    { "source": "/사이트모음", "destination": "/brands/sitemoeum" },
+    { "source": "/%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%AA%A8%EC%9D%8C", "destination": "/brands/sitemoeum" },
+    { "source": "/여기여", "destination": "/brands/yeogiyeo" },
+    { "source": "/%EC%97%AC%EA%B8%B0%EC%97%AC", "destination": "/brands/yeogiyeo" },
+    { "source": "/주소모아", "destination": "/brands/jusomoa" },
+    { "source": "/%EC%A3%BC%EC%86%8C%EB%AA%A8%EC%95%84", "destination": "/brands/jusomoa" },
+    { "source": "/주소월드", "destination": "/brands/jusoworld" },
+    { "source": "/%EC%A3%BC%EC%86%8C%EC%9B%94%EB%93%9C", "destination": "/brands/jusoworld" },
+    { "source": "/주소킹", "destination": "/brands/jusoking" },
+    { "source": "/%EC%A3%BC%EC%86%8C%ED%82%B9", "destination": "/brands/jusoking" },
+    { "source": "/주소탑", "destination": "/brands/jusotop" },
+    { "source": "/%EC%A3%BC%EC%86%8C%ED%83%91", "destination": "/brands/jusotop" }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "timesharelink.com"
+        }
+      ],
+      "destination": "https://www.timesharelink.com/:path*",
+      "permanent": true
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f0f7f0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="260" fill="url(#bg-grad)"/>
+
+  <!-- Stethoscope curling around clipboard -->
+  <!-- Stethoscope tube -->
+  <path d="M295 210 Q330 200 340 170 Q348 140 325 120 Q310 108 295 112 Q280 116 278 130" stroke="#888888" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M278 130 Q272 148 278 162 Q285 178 295 178" stroke="#888888" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Stethoscope ear pieces -->
+  <path d="M295 210 Q300 218 308 215" stroke="#888888" stroke-width="4" fill="none"/>
+  <path d="M295 210 Q290 218 283 215" stroke="#888888" stroke-width="4" fill="none"/>
+  <circle cx="308" cy="215" r="4" fill="#888888"/>
+  <circle cx="283" cy="215" r="4" fill="#888888"/>
+  <!-- Stethoscope chest piece -->
+  <circle cx="295" cy="180" r="10" fill="#888888"/>
+  <circle cx="295" cy="180" r="6" fill="#aaaaaa"/>
+
+  <!-- Clipboard body -->
+  <rect x="80" y="40" width="200" height="190" rx="8" fill="white" stroke="#4A4A4A" stroke-width="3"/>
+
+  <!-- Clipboard clip at top -->
+  <rect x="148" y="30" width="64" height="24" rx="6" fill="#4A4A4A"/>
+  <rect x="156" y="35" width="48" height="12" rx="4" fill="#6a6a6a"/>
+  <!-- Clip hole -->
+  <ellipse cx="180" cy="41" rx="8" ry="4" fill="#4A4A4A"/>
+
+  <!-- Paper on clipboard -->
+  <rect x="88" y="52" width="184" height="170" rx="4" fill="#FFFFFF"/>
+
+  <!-- Header line on clipboard -->
+  <rect x="96" y="62" width="168" height="3" rx="1.5" fill="#e0e0e0"/>
+
+  <!-- Checklist items -->
+  <!-- Item 1 - checked -->
+  <rect x="96" y="80" width="140" height="4" rx="2" fill="#d0d0d0"/>
+  <!-- Checkmark 1 -->
+  <circle cx="256" cy="82" r="10" fill="#5B8533"/>
+  <polyline points="250,82 254,86 262,78" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Item 2 - checked -->
+  <rect x="96" y="108" width="150" height="4" rx="2" fill="#d0d0d0"/>
+  <rect x="96" y="116" width="100" height="3" rx="1.5" fill="#e8e8e8"/>
+  <!-- Checkmark 2 -->
+  <circle cx="256" cy="112" r="10" fill="#5B8533"/>
+  <polyline points="250,112 254,116 262,108" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Item 3 - checked -->
+  <rect x="96" y="138" width="135" height="4" rx="2" fill="#d0d0d0"/>
+  <rect x="96" y="146" width="110" height="3" rx="1.5" fill="#e8e8e8"/>
+  <!-- Checkmark 3 -->
+  <circle cx="256" cy="142" r="10" fill="#5B8533"/>
+  <polyline points="250,142 254,146 262,138" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Additional lines -->
+  <rect x="96" y="166" width="120" height="3" rx="1.5" fill="#e8e8e8"/>
+  <rect x="96" y="178" width="145" height="3" rx="1.5" fill="#e8e8e8"/>
+  <rect x="96" y="190" width="90" height="3" rx="1.5" fill="#e8e8e8"/>
+
+  <!-- Magnifying glass over clipboard -->
+  <!-- Glass circle -->
+  <circle cx="155" cy="132" r="40" fill="white" fill-opacity="0.3" stroke="#4A4A4A" stroke-width="3.5"/>
+  <!-- Glass interior - slightly tinted -->
+  <circle cx="155" cy="132" r="37" fill="#f0f7f0" fill-opacity="0.5"/>
+  <!-- Green checkmark inside magnifying glass (zoomed view) -->
+  <circle cx="155" cy="132" r="18" fill="#5B8533" opacity="0.9"/>
+  <polyline points="144,132 150,138 166,122" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Magnifying glass handle -->
+  <line x1="186" y1="162" x2="210" y2="188" stroke="#4A4A4A" stroke-width="7" stroke-linecap="round"/>
+  <line x1="186" y1="162" x2="210" y2="188" stroke="#6a6a6a" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- "FREE" badge in top right corner of clipboard -->
+  <circle cx="320" cy="65" r="30" fill="#E8751A"/>
+  <circle cx="320" cy="65" r="27" fill="#E8751A" stroke="white" stroke-width="2"/>
+  <text x="320" y="60" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">FREE</text>
+  <text x="320" y="74" font-family="Arial, sans-serif" font-size="7" fill="white" text-anchor="middle">SCREENING</text>
+</svg>

@@ -1,0 +1,71 @@
+---
+title: Radar Training
+slug: radar-training
+date: '2012-06-25'
+tags: []
+excerpt: >-
+  I was invited, along with several ABC 33/40 Skywatchers, to attend a radar
+  seminar at the National Weather Service in Birmingham on Saturday June 23,
+  2012. Meteorologist Kevin Laws, Science Operations Officer for the NWS
+  Birmingham, conducted the training. Below are my notes fro…
+---
+I was invited, along with several ABC 33/40 Skywatchers, to attend a radar seminar at the National Weather Service in Birmingham on Saturday June 23, 2012.  Meteorologist Kevin Laws, Science Operations Officer for the NWS Birmingham, conducted the training.   
+  
+Below are my notes from the seminar.  
+  
+\---  
+  
+Radar is a very complex machine from a mechanical and engineering standpoint. Radar is an “active sensor” of energy. By “active sensor” we mean that it sends out a signal and waits for a return.  
+  
+  
+There are categories of weather radars. There is no such thing as a “best” radar, they all just have different applications.  
+  
+1\. S-Band (10 cm) radar. Example: (NWS Nexrad Doppler Radar)  
+  
+2\. C-Band (5 cm) radar. Example: (Terminal doppler radars)  
+  
+3\. X-Band (3 cm) radar. Example: (DOW, mobile Doppler radars).  
+  
+NWS Doppler (WSR) radar objective is to survey and cover broad areas up to 250 nautical miles. WSR stands for “Weather Surveillance Radar”.  
+  
+C-Band has better resolution that S-Band radars but the surveillance range is much less.  
+  
+X-Band has the highest resolution but range is the lowest. These 10 mm radars can “see” targets that are 1 mm in size. Some radiation returns from the target, some scatters, some is absorbed, and some goes through the target. S-bands have less attenuation than X and C bands.  
+  
+Radar equation:  
+  
+  
+  
+is received power, is transmitted power, is the gain of the transmitting antenna, is radar wavelength, is the radar cross section of the target and is the distance from transmitter to target.  
+  
+Power of the return is measured in decibels (dBZ).  
+  
+Doppler radar was introduced in 1942. Wind speed is measured by comparing the angles on the wavelength that the returns are coming back from on consecutive pulses. For example, if the first pulse came back at 0 degrees and the second pulse came back at 90 degrees, the radar “sees” that the target has moved from 0 to 90. Radars can only measure angles between 0 and 180 degrees, limiting the maximum “measureable” wind speed to 58 knots at 180 degree differences. Once wind speed exceeds 58 knots, the angle measurement starts going down from 180. This maximum velocity that can be correctly displayed by a Doppler radar is known as the Nyquist velocity.  
+  
+By sending out more frequent pulses, the ability to measure higher velocities is possible. However, due to the decreased “listening” time between the more frequent pulses, the effective range is reduced significantly. This is known as the “Doppler Dilemma”.  
+  
+In order to suit the needs of the meteorologist during different weather conditions, NWS WSR-88 Doppler radars have nine available Volume Coverage Patterns (VCP). Each VCP has a predefined set of instructions given to the antenna that control the rotation speed, pulse and listening time, and elevation angles. The longer listening time is better for reflectivity, but worse for accuracy. Some of these VCP’s enhance the measurement of velocity (VCP 212). Clear air mode VCPs of 31 and 32 are used when velocity is not a concern.  
+  
+Dual Pol. Single pol radar cannot distinguish between the size of objects within the target area. For example, a target area may contain 700 1 mm raindrops (drizzle) or one 300 mm raindrop. Since those reflectivities are equal, they appear the same on the radar display. Dual pol radar can help distinguish between these targets. Single pol radar looks horizontally only. As a result it doesn’t distinguish well between the size of the objects causing reflectivity. Dual pol, looks at a vertical cross section in addition to the horizontal. This additional data can be compared. As a result, meteorologists can obtain a good idea of the size of the objects being reflected. This, in turn, enhances the ability to distinguish between precipitation types.  
+  
+One of the dual pol products is ZDR, or differential reflectivity. Hail has a differential reflectivity of around zero. This is measured by subtracting the horizontal dBZ value from the vertical dBZ. When looking at radar products, if you see an area of high dBZ (i.e. 61)on reflectivity and a corresponding low (0) ZDR, the precipitation is hail.  
+  
+Correlation coefficient (CC) indicates how similarly sized the objects in the target are. This helps indicate where there are areas of mixed precipitation or hail.  
+  
+“Three body scattered spike” or 3BSS. This refers to an “artifact” that can occur on radar that is caused by large hail. When the wave intersects hail, it is reflected back and also reflected down to the ground. If the ground is wet it is sometimes reflected back to the hail and back again to the radar. This is displayed as a weak echo region that resembles a “spike” protruding from the part of the thunderstorm producing large hail. While many “artifacts” or anomalies on radar are problematic, some, such as the 3BSS can actually be beneficial to the meteorologist.  
+  
+Future of radar will be phased array radar. The phased array radar is able to scan a variety of pre determined targets which will provide a real time “movie” of a storm system.  
+  
+GR data: Level 2 vs. Level 3 – Level 2 data is raw data (reflectivity, velocity, spectrum width).  
+  
+Level 3 data includes processed data from the NWS. In addition to the raw data, it includes SRV, VIL, Mesos, and TVS. Level two radar software from weather vendors may include processed data, it is not the same processed data as the Level 3 NWS data.  
+  
+Velocity aliasing and folding can be a problem in data provided by level two images provided by vendors. Since the max velocity is 58, the doppler display sometimes shows “couplets” that are nor “real” It also may mask real couplets. Kevin Laws showed examples of various broadcast meteorologists using bad images from their vendor data and compared it to the valid NWS data.  
+  
+Changes to Gibson Ridge GR3 version 2…  
+  
+There is a button to pres too “de-alias” velocity data but the three main changes were the Google Earth map background option, Dual pol data (ZDR, CC, HCA, and KDP), and changes to the color scale.  
+  
+An excellent site to get additional training online is the Warning Decision Training Branch website… http://www.wdtb.noaa.gov/courses/dualpol/  
+  
+The NCDC archives level 2 data from previous weather events.

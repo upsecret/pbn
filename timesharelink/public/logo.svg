@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" fill="#0D0D1A"/>
+  <path d="M18 22C18 18.7 20.7 16 24 16H28C31.3 16 34 18.7 34 22V26C34 29.3 31.3 32 28 32H24C20.7 32 18 29.3 18 26V22Z" fill="none" stroke="#00F0FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M30 32C30 28.7 32.7 26 36 26H40C43.3 26 46 28.7 46 32V36C46 39.3 43.3 42 40 42H36C32.7 42 30 39.3 30 36V32Z" fill="none" stroke="#FF3CFF" stroke-width="3" stroke-linecap="round"/>
+  <line x1="28" y1="32" x2="36" y2="26" stroke="#FFE03C" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="28" cy="32" r="2" fill="#00F0FF"/>
+  <circle cx="36" cy="26" r="2" fill="#FF3CFF"/>
+  <text x="12" y="56" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFE03C" letter-spacing="-0.5">LINK</text>
+</svg>

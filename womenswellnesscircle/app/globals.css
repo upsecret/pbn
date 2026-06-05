@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-purple: #8B7B8B;
+  --color-purple-light: #A699B8;
+  --color-purple-muted: #C4B8C4;
+  --color-purple-dark: #6B5B6B;
+  --color-sage: #7BA68D;
+  --color-sage-dark: #6B9080;
+  --color-sage-muted: #9DBFAD;
+  --color-green-card: #7B8B7B;
+  --color-cream: #F5F0EB;
+  --color-cream-dark: #EDE5DB;
+  --color-text: #4A4A4A;
+  --color-text-light: #6B6B6B;
+  --color-white: #FFFFFF;
+  --color-banner: #9B8EC0;
+}
+
+@theme inline {
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-text);
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* ── WordPress post content ── */
+.wp-content {
+  font-family: 'Lato', Arial, sans-serif;
+  color: #4A4A4A;
+  line-height: 1.85;
+  font-size: 1rem;
+}
+
+.wp-content h1,
+.wp-content h2,
+.wp-content h3,
+.wp-content h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #6B5B6B;
+  margin-top: 2.25rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.3;
+}
+
+.wp-content h1 { font-size: 1.8rem; }
+.wp-content h2 { font-size: 1.45rem; }
+.wp-content h3 { font-size: 1.2rem; }
+
+.wp-content p {
+  margin-bottom: 1.25rem;
+  color: #6B6B6B;
+}
+
+.wp-content a {
+  color: #8B7B8B;
+  text-decoration: underline;
+}
+
+.wp-content a:hover {
+  opacity: 0.7;
+}
+
+.wp-content ul,
+.wp-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: #6B6B6B;
+}
+
+.wp-content ul { list-style: disc; }
+.wp-content ol { list-style: decimal; }
+
+.wp-content li {
+  margin-bottom: 0.4rem;
+  line-height: 1.7;
+}
+
+.wp-content blockquote {
+  border-left: 3px solid #C4B8C4;
+  padding: 0.75rem 1.5rem;
+  margin: 1.75rem 0;
+  font-style: italic;
+  color: #6B5B6B;
+  background-color: #F5F0EB;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.wp-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: 2px;
+}
+
+.wp-content hr {
+  border: none;
+  border-top: 1px solid #E8E0E8;
+  margin: 2.5rem 0;
+}
+
+.wp-content strong {
+  font-weight: 700;
+  color: #4A4A4A;
+}

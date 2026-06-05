@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #E8751A;
+  --color-primary-hover: #cf6416;
+  --color-logo-green: #5B8533;
+  --color-navbar: #4A4A4A;
+  --color-footer: #2A2A2A;
+  --color-location: #3A3A3A;
+  --color-text-dark: #333333;
+  --color-white: #ffffff;
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #333333;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+* {
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+a {
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.hero-services-btn:hover {
+  background-color: #5B8533;
+  color: #ffffff;
+}

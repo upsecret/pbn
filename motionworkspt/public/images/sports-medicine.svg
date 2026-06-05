@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8f0"/>
+      <stop offset="100%" style="stop-color:#ffecd6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="260" fill="url(#bg-grad)"/>
+
+  <!-- "Active Recovery" subtle background text -->
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#f5c99a" text-anchor="middle" opacity="0.35" transform="rotate(-8, 200, 150)">Active Recovery</text>
+
+  <!-- Ground/floor line -->
+  <line x1="40" y1="230" x2="360" y2="230" stroke="#f0d8b8" stroke-width="2"/>
+
+  <!-- Speed lines in orange behind figure -->
+  <g stroke="#E8751A" fill="none">
+    <line x1="60" y1="95" x2="140" y2="95" stroke-width="3" opacity="0.5"/>
+    <line x1="45" y1="110" x2="135" y2="110" stroke-width="2" opacity="0.4"/>
+    <line x1="55" y1="125" x2="138" y2="125" stroke-width="2.5" opacity="0.45"/>
+    <line x1="65" y1="140" x2="142" y2="140" stroke-width="1.5" opacity="0.3"/>
+    <line x1="50" y1="155" x2="140" y2="155" stroke-width="2" opacity="0.35"/>
+    <line x1="70" y1="170" x2="145" y2="170" stroke-width="1.5" opacity="0.25"/>
+    <line x1="60" y1="185" x2="143" y2="185" stroke-width="2.5" opacity="0.4"/>
+    <line x1="40" y1="200" x2="138" y2="200" stroke-width="1.5" opacity="0.3"/>
+  </g>
+
+  <!-- Runner silhouette in dynamic running pose -->
+  <!-- Head -->
+  <circle cx="230" cy="60" r="19" fill="#4A4A4A"/>
+  <!-- Neck -->
+  <rect x="224" y="77" width="12" height="12" fill="#4A4A4A"/>
+  <!-- Torso (leaning forward for running) -->
+  <path d="M215 88 Q235 82 248 90 L252 155 L212 155 Z" fill="#4A4A4A" transform="rotate(-8, 232, 120)"/>
+
+  <!-- Left arm swinging back -->
+  <path d="M222 100 Q195 115 172 130" stroke="#4A4A4A" stroke-width="12" fill="none" stroke-linecap="round" transform="rotate(-8, 232, 120)"/>
+  <!-- Left hand -->
+  <circle cx="170" cy="131" r="7" fill="#4A4A4A"/>
+
+  <!-- Right arm swinging forward -->
+  <path d="M240 95 Q262 82 278 70" stroke="#4A4A4A" stroke-width="12" fill="none" stroke-linecap="round" transform="rotate(-8, 232, 120)"/>
+  <!-- Right hand -->
+  <circle cx="278" cy="69" r="7" fill="#4A4A4A"/>
+
+  <!-- Left leg (back leg lifted) -->
+  <path d="M218 148 L200 190 L188 218" stroke="#4A4A4A" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- Left foot -->
+  <ellipse cx="185" cy="220" rx="18" ry="6" fill="#3a3a3a"/>
+
+  <!-- Right leg (front/driving leg) -->
+  <path d="M238 148 L255 185 L268 215" stroke="#4A4A4A" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- Right foot (pushing off) -->
+  <ellipse cx="272" cy="217" rx="18" ry="6" fill="#3a3a3a"/>
+
+  <!-- Trophy/medal icon in corner -->
+  <g transform="translate(330, 25)">
+    <!-- Trophy cup -->
+    <path d="M0 0 L40 0 L36 30 Q30 40 20 42 Q10 40 4 30 Z" fill="#E8751A"/>
+    <!-- Trophy base -->
+    <rect x="14" y="42" width="12" height="6" rx="2" fill="#E8751A"/>
+    <rect x="10" y="48" width="20" height="4" rx="2" fill="#c96010"/>
+    <!-- Trophy handles -->
+    <path d="M0 5 Q-12 5 -12 20 Q-12 30 0 30" stroke="#c96010" stroke-width="3" fill="none"/>
+    <path d="M40 5 Q52 5 52 20 Q52 30 40 30" stroke="#c96010" stroke-width="3" fill="none"/>
+    <!-- Star on trophy -->
+    <polygon points="20,8 22,14 28,14 23,18 25,24 20,20 15,24 17,18 12,14 18,14" fill="white" opacity="0.8"/>
+  </g>
+
+  <!-- Motion dots/footprints -->
+  <g fill="#E8751A" opacity="0.3">
+    <ellipse cx="120" cy="228" rx="8" ry="4" transform="rotate(-15, 120, 228)"/>
+    <ellipse cx="150" cy="226" rx="8" ry="4" transform="rotate(10, 150, 226)"/>
+    <ellipse cx="180" cy="228" rx="8" ry="4" transform="rotate(-10, 180, 228)"/>
+  </g>
+</svg>
