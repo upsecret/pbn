@@ -4,6 +4,7 @@ import { ForecastModels } from "@/components/sidebar/ForecastModels";
 import { ObservationsClimate } from "@/components/sidebar/ObservationsClimate";
 import { RadarSatellite } from "@/components/sidebar/RadarSatellite";
 import { SevereWeatherTools } from "@/components/sidebar/SevereWeatherTools";
+import { SeoRecommendation } from "@/components/sidebar/SeoRecommendation";
 import { SocialFeed } from "@/components/sidebar/SocialFeed";
 import { SPCOutlooks } from "@/components/sidebar/SPCOutlooks";
 import { StormReports } from "@/components/sidebar/StormReports";
@@ -26,6 +27,9 @@ export function Sidebar() {
         </p>
       </div>
       <SocialFeed />
+
+      {/* Recommended partner */}
+      <SeoRecommendation />
 
       {/* SPC Outlook images */}
       <SPCOutlooks />
