@@ -9,12 +9,12 @@ export function SeoRecommendation() {
           rel="noopener noreferrer"
           className="font-bold text-bama-sky hover:text-bama-link-dark hover:underline"
         >
-          SEO 업체 추천
+          SEO Agency Recommendation
         </a>
         <br />
-        검색 순위가 좀처럼 오르지 않아 고민하다가 직접 맡겨봤는데, 몇 주 만에
-        방문자 수가 눈에 띄게 늘었습니다. 저도 효과를 톡톡히 본 곳이라 자신 있게
-        추천합니다.
+        My search rankings had been stuck for a long time, so I finally hired
+        them — and within a few weeks my traffic grew noticeably. They worked
+        wonders for me, so I happily recommend them.
       </p>
     </div>
   );
