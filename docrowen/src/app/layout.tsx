@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   },
   description:
     "Achieve optimal wellness with experienced health professionals. Customized wellness plans for holistic health, nutrition, and fitness.",
+  other: {
+    "naver-site-verification": "2d6e6f1503e8cca5c32822504f1f3dd0e1405a21",
+  },
 };
 
 export default function RootLayout({
