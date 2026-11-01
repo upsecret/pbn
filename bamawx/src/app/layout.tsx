@@ -11,6 +11,12 @@ const siteUrl = "https://www.bamawx.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  other: {
+    "naver-site-verification": [
+      "dd9dd29bf1a819879641859dbe37ce3fdb66969e",
+      "1d785cd6b68181c868320cf6731412f74d399821",
+    ],
+  },
   title: {
     default: "Mike Wilhelm's Alabama Weather Blog",
     template: "%s | BamaWX",
