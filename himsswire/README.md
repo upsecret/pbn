@@ -6,6 +6,8 @@ Independent healthcare technology coverage published by Upsecret. The public fro
 
 Use a supported Node.js version and run `npm ci`, `npm run check`, and `npm run build`. Copy the public settings from `.env.example` to `.env.local` when a separate development CMS is needed. Vercel uses the `upsecret/pbn` repository, root directory `himsswire`, and Next.js framework preset. Confirm the preview is access-controlled before loading editorial drafts into it.
 
+Set `HIMSSWIRE_INDEXING=enabled` for the production environment at public cutover and rebuild. The default returns a noindex header and a restrictive robots.txt while the site is being commissioned.
+
 The public pages request published posts from WordPress on each visit. The same published-post filter covers articles, topic lists, search, RSS and the sitemap. The backend REST responses and frontend HTML/XML use no-store. Keep the CMS post endpoints uncached at the Hostinger CDN. Backend failures surface as errors without serving an earlier article.
 
 ## WordPress commissioning
