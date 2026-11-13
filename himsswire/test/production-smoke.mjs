@@ -30,6 +30,7 @@ function record(seed, index) {
 }
 
 const posts = seeds.map(record);
+posts.push(record({ ...seeds[0], title: "Retired archive fixture", slug: "rhinoplasty-trends" }, 6));
 posts.unshift({
   ...record({ ...seeds[0], title: marker, slug: "lifecycle-marker" }, 5),
   status: "draft",
@@ -135,6 +136,9 @@ try {
   await probe("/rhinoplasty-trends/", 410);
   await probe("/blog/rhinoplasty-trends/", 410);
   await probe("/news/rhinoplasty-trends", 410);
+  for (const path of ["/", "/news", "/topics/interoperability", "/search?q=Retired", "/feed.xml", "/sitemap.xml"]) {
+    await probe(path, 200, "/news/rhinoplasty-trends", false);
+  }
   await probe("/unused-route", 404);
   await probe("/news?page=100", 404);
   console.log("Passed publishing lifecycle, draft preview, all public surfaces, outage and redirects.");

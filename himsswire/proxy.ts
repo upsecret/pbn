@@ -1,16 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import legacyRoutes from "./migration/legacy-routes.json";
-
-type LegacyRoute = { redirect?: string; gone?: boolean };
-const routes: Record<string, LegacyRoute> = legacyRoutes;
-const removed = new Set(Object.entries(routes).filter(([, entry]) => entry.gone).map(([path]) => path.slice(1)));
+import { isRetiredSlug, legacyRoute } from "./lib/legacy";
 
 export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   const path = pathname.replace(/\/+$/, "") || "/";
-  const route = Object.hasOwn(routes, path) ? routes[path] : undefined;
+  const route = legacyRoute(path);
   const storySlug = path.match(/^\/(?:news|blog|post)\/([^/]+)$/)?.[1];
-  if (route?.gone || (storySlug && removed.has(storySlug))) {
+  if (route?.gone || (storySlug && isRetiredSlug(storySlug))) {
     return new NextResponse("This article is no longer available.", {
       status: 410,
       headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store", "X-Robots-Tag": "noindex" },

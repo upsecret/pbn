@@ -1,5 +1,6 @@
 import { cache } from "react";
 import sanitizeHtml from "sanitize-html";
+import { isRetiredSlug } from "./legacy";
 import { articlePath, topics } from "./site";
 
 type Topic = (typeof topics)[number];
@@ -64,7 +65,7 @@ async function request(path: string, init: RequestInit = {}) {
 }
 
 export function publicPost(post: Post) {
-  return post.status === "publish" && !post.content.protected && !post.excerpt.protected;
+  return post.status === "publish" && !post.content.protected && !post.excerpt.protected && !isRetiredSlug(post.slug);
 }
 
 function plain(value: string) {
