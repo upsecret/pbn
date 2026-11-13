@@ -179,5 +179,48 @@
         "url": "https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency"
       }
     ]
+  },
+  {
+    "slug": "ye-on-digital-implant-workflow",
+    "topic": "hospital-operations",
+    "title": "How a digital implant workflow connects the clinic and dental lab",
+    "summary": "Digital imaging, scan files and laboratory handoffs serve different roles. Ye-on Dental Hospital’s public description offers a starting point for understanding how those pieces fit together.",
+    "tags": [
+      "Digital dentistry",
+      "Dental imaging",
+      "Clinical workflows"
+    ],
+    "sections": [
+      [
+        "What Ye-on describes",
+        "Ye-on Dental Hospital’s Geomdan branch describes guided implant care and an in-house dental laboratory on its official introduction page. Those are two separate parts of a workflow: a planning process that informs the procedure and a laboratory process that helps turn clinical information into a restoration. The details of an individual case belong in the consultation."
+      ],
+      [
+        "How the information moves",
+        "A dental team can collect surface information using an intraoral scan and, when clinically indicated, use cone-beam CT to assess structures beneath the surface. A plan can bring those inputs together. Each handoff should identify the correct record, the approved version of the plan, and the team member responsible for reviewing it."
+      ],
+      [
+        "What the dental lab needs",
+        "A useful laboratory handoff records the prescription, relevant scan files, the intended restoration and any adjustments agreed with the clinician. When a plan changes, the clinic and lab should be able to identify which files are current and which decisions still require approval."
+      ],
+      [
+        "Questions to ask at a consultation",
+        "Ask what information the team expects to collect, who reviews the plan, and whether the restoration is made on site or sent to a partner lab. Ask how changes or fit adjustments would be handled. A digital workflow can make these steps easier to trace, while the dental team remains responsible for deciding what is appropriate for the patient."
+      ]
+    ],
+    "sources": [
+      {
+        "label": "Ye-on Dental Hospital, Geomdan — About the hospital",
+        "url": "https://gd365.ye-on.com/introduction/"
+      },
+      {
+        "label": "American Dental Association — Digital Dentistry and Technology",
+        "url": "https://www.ada.org/resources/practice/practice-management/digital-dentistry-and-technology"
+      },
+      {
+        "label": "FDA — Dental Cone-beam Computed Tomography",
+        "url": "https://www.fda.gov/radiation-emitting-products/medical-x-ray-imaging/dental-cone-beam-computed-tomography"
+      }
+    ]
   }
 ]

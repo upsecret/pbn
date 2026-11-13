@@ -53,13 +53,22 @@ export class CmsError extends Error {
 
 async function request(path: string, init: RequestInit = {}) {
   try {
-    return await fetch(cmsUrl + "/wp-json/" + path, {
+    const response = await fetch(cmsUrl + "/wp-json/" + path, {
       ...init,
       cache: "no-store",
       signal: AbortSignal.timeout(6000),
-      headers: { Accept: "application/json", ...init.headers },
+      headers: { Accept: "application/json", "User-Agent": "HIMSSwire-Publishing/1.0", ...init.headers },
     });
-  } catch {
+    if (!response.ok && response.status >= 400) {
+      console.error("WordPress REST response", response.status, path.split("?")[0]);
+    }
+    return response;
+  } catch (error) {
+    const reason = error instanceof Error ? error.name + ": " + error.message : "Network error";
+    const cause = error instanceof Error && error.cause && typeof error.cause === "object" && "code" in error.cause
+      ? error.cause.code
+      : undefined;
+    console.error("WordPress REST request failed", path.split("?")[0], reason, cause);
     throw new CmsError();
   }
 }
