@@ -1,0 +1,183 @@
+[
+  {
+    "slug": "fhir-exchange-testing",
+    "topic": "interoperability",
+    "title": "What to test before a FHIR exchange goes live",
+    "summary": "A practical guide to testing data exchange across electronic health records, from patient matching to incomplete records.",
+    "tags": [
+      "FHIR",
+      "Electronic health records",
+      "Data exchange"
+    ],
+    "sections": [
+      [
+        "Start with one workflow",
+        "Choose a workflow with an identifiable recipient and a clear definition of success. For a referral, follow the record from the sending system to the receiving clinician's queue. Record which details the receiver needs, which system owns each field, and what happens when a value is absent."
+      ],
+      [
+        "Test how the recipient sees the data",
+        "Use synthetic patient records. Include differences in names and identifiers, missing units, amended results and records with unexpected codes. Have the receiving team confirm that the data lands in the right chart, appears in the expected view, and can be traced back to its source."
+      ],
+      [
+        "Treat transport and interpretation as separate checks",
+        "The HL7 FHIR US Core guide describes profiles and requirements intended to support exchange across U.S. healthcare systems. A successful response is only one part of acceptance. Also compare the meaning and units of the information as displayed, and test retry behavior so an interrupted exchange does not create duplicate work."
+      ],
+      [
+        "Set an owner for exceptions",
+        "Document where failed exchanges appear, how support staff can reproduce them without patient data, and which team resolves them. Keep these examples as regression cases for future EHR and interface upgrades."
+      ]
+    ],
+    "sources": [
+      {
+        "label": "ASTP/ONC eCQI Resource Center — HL7 FHIR US Core Implementation Guide",
+        "url": "https://ecqi.healthit.gov/tool/hl7-fhir-us-core-ig"
+      }
+    ]
+  },
+  {
+    "slug": "hospital-cybersecurity-recovery",
+    "topic": "security",
+    "title": "A hospital cybersecurity exercise should end with a restore",
+    "summary": "Use a controlled recovery exercise to learn whether staff can regain access to the systems they need.",
+    "tags": [
+      "Cybersecurity",
+      "Disaster recovery",
+      "Hospital IT"
+    ],
+    "sections": [
+      [
+        "Pick a dependency that matters",
+        "Start with a service used in a daily clinical workflow. Write down which systems, accounts and network connections it depends on, and which workflows teams would run during downtime."
+      ],
+      [
+        "Run the restore in isolation",
+        "Use a non-production environment and approved test data. Ask the team to recover a backup, verify access with the intended roles and check whether the recovered service can communicate with the systems it needs. Compare the recovered state with the expected backup time."
+      ],
+      [
+        "Practice the handoff back to operations",
+        "Have an operations owner verify that the restored data is usable. Record the actual recovery time, the amount of data that would need reconciliation, and the work still needed before returning to normal operations."
+      ],
+      [
+        "Make the next drill measurable",
+        "HHS lists backup and incident preparedness practices among its voluntary healthcare cybersecurity performance goals. Turn the drill results into a short list of owned actions, with specific recovery steps to retest after changes."
+      ]
+    ],
+    "sources": [
+      {
+        "label": "HHS — Healthcare and Public Health Sector Cybersecurity Performance Goals",
+        "url": "https://hhscyber.hhs.gov/performance-goals.html"
+      },
+      {
+        "label": "ASPR TRACIE — Healthcare System Cybersecurity Readiness and Response Considerations",
+        "url": "https://files.asprtracie.hhs.gov/documents/aspr-tracie-healthcare-system-cybersercurity-readiness-response.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "telehealth-workflow-practice-run",
+    "topic": "digital-health",
+    "title": "What a telehealth practice run should reveal",
+    "summary": "A workflow rehearsal can expose problems in scheduling, check-in and follow-up before they reach a patient.",
+    "tags": [
+      "Telehealth",
+      "Virtual care",
+      "Clinical workflows"
+    ],
+    "sections": [
+      [
+        "Start before the video call",
+        "Have one staff member play the patient. Schedule an appointment, follow the reminder, and join from a device outside the office network. Observe which instructions are hard to follow and where a patient would ask for help."
+      ],
+      [
+        "Rehearse a failed connection",
+        "Test the handoff when a patient cannot join or loses audio. Record who contacts the patient, where staff can find the correct information, and how the care team documents any change to the appointment."
+      ],
+      [
+        "Close the loop in the EHR",
+        "Walk through documentation, follow-up instructions, and the next appointment. HHS's telehealth workflow guidance covers these stages alongside scheduling and check-in. The rehearsal should show whether information reaches the right team without duplicate entry."
+      ],
+      [
+        "Test accessibility and support",
+        "Repeat the exercise with a keyboard, a small display and a constrained network connection. Put the support instructions where patients can find them before the appointment. Use the results to update the checklist staff use for new services."
+      ]
+    ],
+    "sources": [
+      {
+        "label": "HHS — Planning your telehealth workflow",
+        "url": "https://telehealth.hhs.gov/providers/planning-your-telehealth-workflow"
+      }
+    ]
+  },
+  {
+    "slug": "healthcare-ai-pilot-evaluation",
+    "topic": "data-ai",
+    "title": "How to review a healthcare AI pilot before expanding it",
+    "summary": "Define the task, measure the errors that matter and make it easy for staff to flag poor results.",
+    "tags": [
+      "AI governance",
+      "Evaluation",
+      "Healthcare analytics"
+    ],
+    "sections": [
+      [
+        "Describe one intended use",
+        "State who uses the tool, which workflow it supports, and where a person reviews the output. A pilot for organizing incoming messages has different consequences from a system that informs a clinical decision. Define what the pilot may process and what it must leave to staff."
+      ],
+      [
+        "Measure performance on local cases",
+        "Use appropriately approved data or representative synthetic examples. Include routine requests, ambiguous inputs and examples from workflows that differ across sites or teams. Record the errors reviewers consider serious and how much extra time it takes to correct them."
+      ],
+      [
+        "Assign a way to report problems",
+        "Give staff a clear place to report inaccurate output and a way to pause the workflow. Keep a record of the system version, settings and conditions in which the problem occurred. Use those details to decide what to retest when the tool changes."
+      ],
+      [
+        "Use a review framework",
+        "NIST's voluntary AI Risk Management Framework organizes work around governance, mapping, measurement and management. Apply those ideas to the pilot by writing down who owns the decision, what evidence is needed for expansion, and when the team will reevaluate it."
+      ]
+    ],
+    "sources": [
+      {
+        "label": "NIST — AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    ]
+  },
+  {
+    "slug": "hospital-price-transparency-data",
+    "topic": "hospital-operations",
+    "title": "Who owns the hospital price transparency file?",
+    "summary": "Publishing the file is one step. Keeping it accurate calls for a workflow that finance and IT can run together.",
+    "tags": [
+      "Hospital operations",
+      "Revenue cycle",
+      "Data quality"
+    ],
+    "image": "hospital-operations.jpg",
+    "alt": "Clinician reviewing screens in a hospital operations center, illustrative image",
+    "sections": [
+      [
+        "Trace the file back to its sources",
+        "List the systems that supply charge descriptions, payer data and facility identifiers. Agree on who owns each source and which exports the publication pipeline uses. Keep the dates and versions so a change can be reproduced."
+      ],
+      [
+        "Check the output as a visitor would",
+        "Download the published file from outside the hospital network and parse it with the same schema checks used before release. Look for missing facilities, stale timestamps and broken links. Compare a small sample with the source data and ask finance staff to review exceptions."
+      ],
+      [
+        "Make corrections repeatable",
+        "Publish from a reproducible export and keep the previous validated file available to the operations team. Define who fixes source errors and who can rerun publication. Record the last successful validation so staff can investigate an incomplete update."
+      ],
+      [
+        "Check current CMS materials",
+        "CMS publishes implementation resources for hospital price transparency, including material on machine-readable data. Check the current CMS guidance before changing the data format or publication process."
+      ]
+    ],
+    "sources": [
+      {
+        "label": "CMS — Hospital Price Transparency",
+        "url": "https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency"
+      }
+    ]
+  }
+]

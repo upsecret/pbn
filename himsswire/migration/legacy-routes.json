@@ -1,0 +1,9 @@
+{
+  "/blog-list": { "redirect": "/news" },
+  "/blog": { "redirect": "/news" },
+  "/feed": { "redirect": "/feed.xml" },
+  "/breast-reconstruction-surgery-purpose-techniques-and-global-costs": { "gone": true },
+  "/facial-contouring-surgery-types-and-aftercare-tips-for-a-balanced-refined-look": { "gone": true },
+  "/global-rise-of-gynecomastia-surgery-what-makes-south-korea-a-top-choice-for-men": { "gone": true },
+  "/rhinoplasty-trends": { "gone": true }
+}
