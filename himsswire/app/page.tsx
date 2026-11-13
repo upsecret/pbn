@@ -20,7 +20,7 @@ export default async function Home() {
           <div className="section-top"><h1>Healthcare IT News</h1><Link href="/news">All stories <span aria-hidden="true">↗</span></Link></div>
           {lead ? (
             <article className="lead-story">
-              <Link className="lead-photo" href={lead.path} tabIndex={-1} aria-hidden="true"><Cover article={lead} priority /></Link>
+              {lead.image && <Link className="lead-photo" href={lead.path} tabIndex={-1} aria-hidden="true"><Cover article={lead} priority /></Link>}
               <div className="lead-copy">
                 {lead.topic && <Link className="eyebrow" href={"/topics/" + lead.topic.slug}>{lead.topic.name}</Link>}
                 <h2><Link href={lead.path}>{lead.title}</Link></h2>
