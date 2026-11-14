@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import parse, { HTMLReactParserOptions, Element, domToReact, DOMNode } from "html-react-parser";
-import { getPostBySlug, getAllPostSlugs } from "@/lib/wordpress";
+import { getPostBySlug } from "@/lib/wordpress";
 import {
   decodeHtmlEntities,
   formatDate,
@@ -11,12 +11,7 @@ import {
   stripHtml,
 } from "@/lib/utils";
 
-export const revalidate = 600;
-
-export async function generateStaticParams() {
-  const slugs = await getAllPostSlugs();
-  return slugs.map((slug) => ({ slug }));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
