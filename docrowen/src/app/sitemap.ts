@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 import { getAllPostSlugs } from "@/lib/wordpress";
 
+export const dynamic = "force-dynamic";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const slugs = await getAllPostSlugs();
   const siteUrl = "https://docrowen.com";
